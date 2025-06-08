@@ -229,32 +229,92 @@ position: relative;
   background-color: #0056b3;
 }
 
-/* === RESPONSIVE DESIGN === */
-@media (max-width: 1024px) {
-  .project-card {
-    flex: 1 1 calc(48% - 20px); /* 2 cards per row */
-    max-width: calc(48% - 20px);
-  }
-}
-
+/* === MOBILE PHONES: max-width 768px and below === */
 @media (max-width: 768px) {
-  .project-card {
-    flex: 1 1 100%;
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section h2 {
+    font-size: 24px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
+  .features.container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature {
+    max-width: 95%;
+    margin-bottom: 20px;
+  }
+
+  .services-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .services-buttons button {
+    width: 100%;
+  }
+
+  .gallery img,
+  .project-images img {
+    width: 100%;
     max-width: 100%;
+    height: auto;
   }
 
-  .project-section h2 {
-    font-size: 28px;
+  .project-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .main-nav button {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .social-icons {
+    margin-top: 10px;
   }
 }
-
-.social-icons a {
-    color: rgb(38, 220, 150);
-    margin: 0 10px;
-    font-size: 20px;
-}
-
-.social-icons a:hover {
-    color: #0077cc;
-}
-
